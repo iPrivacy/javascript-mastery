@@ -1,0 +1,111 @@
+html {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  margin: auto;
+}
+
+body img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.keyboard-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0% 2%;
+  margin-bottom: 25%;
+  z-index: 1000;
+}
+
+.keyboard-wrapper button {
+  display: block;
+  border: 1px solid #d7e9f7;
+  padding: 10px 25px;
+  font-size: 16px;
+  border-radius: 50%;
+  background: #fdfce5;
+  cursor: pointer;
+}
+
+.keyboard-wrapper button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background: #f9f3df;
+}
+
+.keyboard-wrapper button a {
+  text-decoration: none;
+  color: gray;
+  font-size: 25px;
+}
+
+.keyboard-wrapper button a:hover {
+  color: black;
+}
+
+@media (max-width: 800px) {
+  body .keyboard-wrapper {
+    width: 100%;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0px 2px;
+  }
+  body .keyboard-wrapper button {
+    width: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .keyboard-wrapper button span {
+    font-size: smaller;
+    background-color: blueviolet;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
